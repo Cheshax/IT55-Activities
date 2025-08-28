@@ -3,86 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif; background-color: #f5f5f5;
-        }
-        h1{
-            color: #2c3e50;
-        }
-        p{
-            line-height: 1.5;
-        }
-        .highlight{
-            background-color: yellow;
-        }
-    </style>
+    <title>My first webpage</title>
+    <link rel="stylesheet" href="style.css">
     <script>
-
+        document.addEventListener("DOMContentLoaded", () =>{
+        const btn = document.querySelector("#contact")
+        const contact = document.querySelector("#contact-form")
+        btn.onclick = () =>{
+            contact.scrollIntoView({behavior:"smooth"})
+        }})
     </script>
 </head>
-<body onload="greet()">
-    <h1>Welcome to My First Webpage</h1>
-    <p>This is a <b>bold</b> statement, and here is some <i>italic</i> text.</p>
-    <p class="highlight">This paragraph is highlighted using CSS.</p>
-    <H2>My Favourite Fruits</H2>
-    <ul>
-        <li>Mango</li>
-        <li>Grapes</li>
-        <li>Beverly</li>
+<body>
+    <main id="main-container">
+        <header id="header">
+            <h1 id="header-h1">MY FIRST WEBPAGE</h1>
+            <h1 id="contact">CONTACT ME</h1>
+        </header>
+        <div id="main-Content">
+            <div id="welcoming-container">
+                <p id="welcoming">WELCOME TO MY FIRST WEBPAGE</p>
+                <p>This is a <b>bold</b> statement, and here is some <i>italic</i> text.</p>
+                <p class="highlight">This paragraph is highlighted using CSS.</p>
+                
+    <ul class="texts" id="ulbox">
+        <H2 class="texts">MY FAVORITE FRUITS</H2>
+        <li class="texts">Mango</li>
+        <li class="texts">Grapes</li>
+        <li class="texts">Beverly</li>
     </ul>
-
-    <h2>Steps To make a hydrogen bomb</h2> <!-- This is a joke please dont send me to the government-->
-    <ol>
-        <li>explode the plutonium core.</li>
-        <li>the heat and pressure created by step one causes the lithium and or tritium to fuse.</li>
-        <li>step one and step 2 created an enormous amount of fast neutrons that in turn cause the U-235 case</li>
+    <ol class="texts" id="ulbox2">
+        <h2 class="texts">Steps To make a hydrogen bomb</h2> <!-- This is a joke please dont send me to the government-->
+        <li class="texts">explode the plutonium core.</li>
+        <li class="texts">the heat and pressure created by step one causes the lithium and or tritium to fuse.</li>
+        <li class="texts">step one and step 2 created an enormous amount of fast neutrons that in turn cause the U-235 case</li>
     </ol>
-    <!-- This is a comment: The above lists show unordered and ordered lists -->
-     <p>Visit <a href="https://www.quora.com/How-would-I-build-a-hydrogen-bomb" target="_blank">Tor Browser</a> for more
+     <!-- This is a comment: The above lists show unordered and ordered lists -->
+      <p>Visit <a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1 target="_blank">Tor Browser</a> for more
 info.</p>
-
-    <h2>My Favorite Song</h2>
-        <audio controls>
+<img style="padding-top: 30px;" src="arrow_drop_down.svg" alt="">
+ <h1 id="tisme">THIS IS ME</h1>
+<div id="profile">
+    <img id="mepic" src="me.jpg" alt="">
+    <div id="metext">
+     <p class="me-description">
+                    Name:  Adrian Steve V. Andalesio <br>
+                    Age: 18 <br>
+                    Birthday: December 16 2005 <br>
+                    Hobbies: Games, Coding, eat and sleep <br>
+                </p>
+                <div id="songcont">
+                <p id="song">
+                    Favorite song:
+                </p>
+                <audio controls>
             <source src="music anonymous typshit.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-    <h2>My Favorite Movie Scene</h2>
-        <video width="320" height="240" controls>
+        </div>
+        <div id="vidcont">
+                <p id="movi">
+                    Favorite movie scene:
+                </p>
+                 <video width="320" height="240" controls>
             <source src="videoplayback.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    <h2>My Favorite Picture</h2>
-        <img src="iloveher.jpeg" alt="A beautiful view" width="300">
-    <h2>I LOVE THIS GIRL SO MUCH</h2>
-    <div style="border: 1px solid #000; padding: 10px; margin-top: 10px;">
+        </div>
+        </div>
+</div>
+    <h1 id="favpic">MY FAVORITE PICTURE</h1>
+    <img id="bevpic" src="iloveher.jpeg" alt="A beautiful view" width="300">
+    <h2 style="color: white; padding-top: 57px;">I LOVE THIS GIRL SO MUCH</h2>
+    <div id="blockcontain">
         <p>This is a block container using <span style="color:red;">div</span> and <span style="font-weight:bold;">span</span> elements.</p>
     </div>
-    <h2>Class Schedule</h2>
-    <table border="1" cellpadding="5">
+    <h2 id="schedtext">CLASS SCHEDULE</h2>
+    <table border="1" cellpadding="5" class="tablesched">
         <tr>
-            <th>Day</th>
-            <th>Subject </th>
+            <th class="texts">Day</th>
+            <th class="texts">Subject</th>
+            <th class="texts">Time</th>
+            <th class="texts">Room</th>
         </tr>
         <tr>
-            <td>Monday</td>
-            <td>HTML Basics</td>
+            <td class="texts">Monday/Wednesday</td>
+            <td class="texts">Web Design and Technology I</td>
+            <td class="texts">10:00 - 11:00 AM</td>
+            <td class="texts">CISC Room 2</td>
         </tr>
         <tr>
-            <td>Tuesday</td>
-            <td>CSS Basics</td>
+            <td class="texts">Thursday</td>
+            <td class="texts">Web Design and Technology I (Lab)</td>
+            <td class="texts">1:00 - 4:00 PM</td>
+            <td class="texts">CISC Lab</td>
         </tr>
     </table>
-    <h2>Contact Me</h2>
-    <form>
-    <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-    <label for="message">Message:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
-    <input type="submit" value="Send">
+     <div id="contact-form">
+        <form id="contact-form2">
+    <label for="name" class="texts">Name:</label>
+        <input style="margin-left: 20px; margin-right: 20px;" type="text" id="name" name="name"><br><br>
+    <label for="email" class="texts">Email:</label>
+        <input style="margin-left: 20px; margin-right: 20px;" type="email" id="email" name="email"><br><br>
+    <label for="message" class="texts">Message:</label><br>
+        <textarea style="margin-left: 20px; margin-right: 20px;" id="message" name="message"></textarea><br><br>
+    <input style="width: 50px; height: 30px;" type="submit" value="Send">
     </form>
+    </div>
+            </div>
+            
+        </div>
+        
+    </main>
+   
 </body>
 </html>
