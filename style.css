@@ -14,7 +14,7 @@ p{
 }
 #main-container{
     margin: 0;
-    height: 358vh;
+    height: 435vh;
     width: 100vw;
     background-color: rgb(12, 12, 12);
 }
@@ -176,4 +176,5 @@ p{
 #contact-form2{
     display: flex;
     align-items: center;
+
 }
